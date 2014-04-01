@@ -106,3 +106,8 @@
 (defun e2wm:my-toggle-sub () ; Subをトグルする関数
   (interactive)
   (e2wm:pst-window-toggle 'sub t 'main))
+
+;;;auto-complate
+(require 'auto-complete)
+    (require 'auto-complete-config)
+    (global-auto-complete-mode t)
