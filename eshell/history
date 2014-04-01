@@ -1,0 +1,49 @@
+ls
+cd Dev
+ls
+cd cd be
+ls
+cd be
+kls
+ls
+cd docopo/
+ls
+cd app/
+ls
+cd Controller/
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ikea_compare/
+ls
+cd ..
+ls
+cd terpsi/
+ls
+cd cakephp/
+ls
+cd app/
+ls
+cd Controller/
+ls
+vim MoviesController.php 
+ls
+cd Dev
+ls
+cd be
+ls
+cd terpsi/
+ls
+cd cakephp/
+ls
+cd app/
+ls
+cd Model/
+ls
+emacs -nw Group.php 
+ls -la
+emacs -nw Group.php 
+exit
