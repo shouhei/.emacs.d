@@ -10,10 +10,6 @@
 (show-paren-mode t)
 ;;;カーソルの行をハイライト
 (global-hl-line-mode t)
-;;;常に行数を表示する
-(global-linum-mode t)
-;;;行数表示のフォーマット
-(setq linum-format "%4d")
 ;;;指定行への移動
 (global-set-key "\C-x\C-g" 'goto-line)
 ;;;タブをスペース4つに置き換える
