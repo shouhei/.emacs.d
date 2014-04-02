@@ -107,3 +107,17 @@
 (require 'auto-complete)
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
+
+
+;;;php-mode
+(require 'flymake)
+(eval-after-load 'flymake '(require 'flymake-cursor))
+;; PHP用の設定
+(require 'flymake-php)
+(add-hook 'php-mode-hook 'flymake-php-load)
+
+;; php-mode
+(require 'php-mode)
+
+(setq php-mode-force-pear t) ;PEAR規約のインデント設定にする
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode)) ;*.phpのファイルのときにphp-modeを自動起動する
