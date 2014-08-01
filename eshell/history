@@ -1,28 +1,4 @@
 ls
-cd Dev
-ls
-cd cd be
-ls
-cd be
-kls
-ls
-cd docopo/
-ls
-cd app/
-ls
-cd Controller/
-ls
-cd ..
-cd ..
-ls
-cd ..
-ls
-cd ikea_compare/
-ls
-cd ..
-ls
-cd terpsi/
-ls
 cd cakephp/
 ls
 cd app/
@@ -47,3 +23,106 @@ emacs -nw Group.php
 ls -la
 emacs -nw Group.php 
 exit
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+php oil refine send_message
+php oil refine send_messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Message
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+php oil refine Send_Messages
+Welcome to the Emacs shell
+Welcome to the Emacs shell
+php oil refine Send_Messages
+i
+php oil refine Send_Messages
+exit
+ls
+mv _form.php _form.php.org
+mv create.php create.php.org
+ls
+exit
+ls
+cd ..
+ls
+mv template.php.org template.php.org2
+ls
+mv template.php template.php.org
+l
+touch template.php
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+ls
+cd fuel/
+ls
+cd app/
+ls
+cd views/
+ls
+cd user
+cd ..
+lcd
+ls
+cd users
+ls
+mv index.php index.php.org
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cat index.php 
+ls
+mv index.php  views/users/
+ls
+cd views/
+ls
+cd users/
+ls
+ks
+ls
+cd ..
+ls
+cd users
+ls
+cd ..
+ls
+cd messages
+ls
+mv view.php view.php.org

@@ -30,6 +30,10 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+
+(set-face-background 'region "SkyBlue")
+(set-face-foreground 'region "black")
+
 ;;;タブ,空白の設定
 (require 'whitespace)
 
@@ -60,18 +64,7 @@
 (set-keyboard-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
 
-;;文字コード
-(set-face-attribute 'default nil
-                  :family "Ricty"
-                                     :height 160)
-(set-fontset-font
- nil 'japanese-jisx0208
-  (font-spec :family "Ricty"))
-
-;;背景色
-(set-face-background 'default "black")
-(set-face-foreground 'default "green")
-
+(load-theme 'zenburn t)
 ;;;anzu
 (global-anzu-mode +1)
 
@@ -80,6 +73,7 @@
 
 (require 'e2wm)
 (global-set-key (kbd "M-+") 'e2wm:start-management)
+
 ;;e2wm
 (e2wm:add-keymap
  e2wm:pst-minor-mode-keymap
@@ -87,8 +81,8 @@
     ("<M-right>"  . e2wm:dp-two) ; twoへ変更
     ("<M-up>"    . e2wm:dp-doc)  ; docへ変更
     ("<M-down>"  . e2wm:dp-dashboard) ; dashboardへ変更
-    ("C-."       . e2wm:pst-history-forward-command) ; 履歴進む
-    ("C-,"       . e2wm:pst-history-back-command) ; 履歴戻る
+    ("C-x ."       . e2wm:pst-history-forward-command) ; 履歴進む
+    ("C-x ,"       . e2wm:pst-history-back-command) ; 履歴戻る
     ("C-M-s"     . e2wm:my-toggle-sub) ; subの表示をトグルする
     ("prefix L"  . ielm) ; ielm を起動する（subで起動する）
     ("M-m"       . e2wm:pst-window-select-main-command) ; メインウインドウを選択する
@@ -108,7 +102,27 @@
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
 
-
+; web-mode
+(require 'web-mode)
+;; 拡張子の設定
+(add-to-list 'auto-mode-alist '("\\.phtml$"     . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsp$"       . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x$"   . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$"       . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?$"     . web-mode))
+;; インデント関係
+(defun web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-html-offset   4)
+  (setq web-mode-css-offset    4)
+  (setq web-mode-script-offset 4)
+  (setq web-mode-php-offset    4)
+  (setq web-mode-java-offset   4)
+  (setq web-mode-asp-offset    4)
+  (setq indent-tabs-mode t)
+  (setq tab-width 4))
+(add-hook 'web-mode-hook 'web-mode-hook)
 ;;;php-mode
 (require 'flymake)
 (eval-after-load 'flymake '(require 'flymake-cursor))
