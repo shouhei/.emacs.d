@@ -129,5 +129,5 @@
 ;; php-mode
 (require 'php-mode)
 
-(setq php-mode-force-pear t) ;PEAR規約のインデント設定にする
+(setq php-mode-force-psr t) ;psr規約のインデント設定にする
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode)) ;*.phpのファイルのときにphp-modeを自動起動する
