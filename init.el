@@ -63,7 +63,7 @@
 (prefer-coding-system 'utf-8-unix)
 (set-keyboard-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
-
+;;.zshrv 'export TERM=xterm-256color'
 (load-theme 'zenburn t)
 ;;;anzu
 (global-anzu-mode +1)
