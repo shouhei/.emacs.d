@@ -137,3 +137,24 @@
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
+
+
+(require 'ruby-electric)
+(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
+(setq ruby-electric-expand-delimiters-list nil)
+
+;; ruby-block.el --- highlight matching block
+(require 'ruby-block)
+(ruby-block-mode t)
+(setq ruby-block-highlight-toggle t)
+
+
+;; rcodetools
+(add-to-list 'load-path "~/.emacs.d/elpa")
+(require 'rcodetools)
+(setq rct-find-tag-if-available nil)
+(defun ruby-mode-hook-rcodetools ()
+  (define-key ruby-mode-map "\M-\C-i" 'rct-complete-symbol)
+    (define-key ruby-mode-map "\C-c\C-t" 'ruby-toggle-buffer)
+      (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
+(add-hook 'ruby-mode-hook 'ruby-mode-hook-rcodetools)
