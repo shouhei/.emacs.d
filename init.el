@@ -102,7 +102,11 @@
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
 
-; web-mode
+;;;
+(require 'helm-config)
+(helm-mode 1)
+
+;;;web-mode
 (require 'web-mode)
 ;; 拡張子の設定
 (add-to-list 'auto-mode-alist '("\\.ctp$"     . web-mode))
@@ -128,6 +132,8 @@
 
 ;; php-mode
 (require 'php-mode)
-
 (setq php-mode-force-psr t) ;psr規約のインデント設定にする
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode)) ;*.phpのファイルのときにphp-modeを自動起動する
+
+(require 'smartparens-config)
+(smartparens-global-mode t)
