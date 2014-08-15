@@ -158,3 +158,24 @@
     (define-key ruby-mode-map "\C-c\C-t" 'ruby-toggle-buffer)
       (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
 (add-hook 'ruby-mode-hook 'ruby-mode-hook-rcodetools)
+
+(require 'drill-instructor)
+(setq drill-instructor-global t)
+
+;; ↓ここから追加
+(mapc (lambda (name)
+        (fset name 'kill-emacs))
+      '(drill-instructor-alert-up
+        drill-instructor-alert-down
+        drill-instructor-alert-right
+        drill-instructor-alert-left
+        drill-instructor-alert-return
+        drill-instructor-alert-tab))
+
+(require 'popup-select-window)
+(global-set-key "\C-xo" 'popup-select-window)
+
+
+(autoload 'coffee-mode "coffee-mode" "Major mode for editing CoffeeScript." t)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
