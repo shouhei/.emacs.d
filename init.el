@@ -170,6 +170,7 @@
         drill-instructor-alert-right
         drill-instructor-alert-left
         drill-instructor-alert-return
+        drill-instructor-alert-del
         drill-instructor-alert-tab))
 
 (require 'popup-select-window)
@@ -211,3 +212,30 @@
 (define-key global-map (kbd "M-y")     'helm-show-kill-ring)
 (define-key global-map (kbd "C-c i")   'helm-imenu)
 (define-key global-map (kbd "C-x b")   'helm-buffers-list)
+
+(defun helm-select-2nd-action ()
+    "Select the 2nd action for the currently selected candidate."
+      (interactive)
+        (helm-select-nth-action 1))
+
+(defun helm-select-3rd-action ()
+    "Select the 3rd action for the currently selected candidate."
+      (interactive)
+        (helm-select-nth-action 2))
+
+(defun helm-select-4th-action ()
+    "Select the 4th action for the currently selected candidate."
+      (interactive)
+        (helm-select-nth-action 3))
+
+(defun helm-select-2nd-action-or-end-of-line ()
+    "Select the 2nd action for the currently selected candidate.
+  This happen when point is at the end of minibuffer.
+  Otherwise goto the end of minibuffer."
+      (interactive)
+        (if (eolp)
+                (helm-select-nth-action 1)
+                    (end-of-line)))
+
+(define-key helm-map (kbd "C-e")        'helm-select-2nd-action-or-end-of-line)
+(define-key helm-map (kbd "C-j")        'helm-select-3rd-action)
