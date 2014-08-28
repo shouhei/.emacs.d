@@ -239,3 +239,5 @@
 
 (define-key helm-map (kbd "C-e")        'helm-select-2nd-action-or-end-of-line)
 (define-key helm-map (kbd "C-j")        'helm-select-3rd-action)
+(require 'undo-tree)
+(global-undo-tree-mode)
