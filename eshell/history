@@ -1,27 +1,3 @@
-ls
-cd cakephp/
-ls
-cd app/
-ls
-cd Controller/
-ls
-vim MoviesController.php 
-ls
-cd Dev
-ls
-cd be
-ls
-cd terpsi/
-ls
-cd cakephp/
-ls
-cd app/
-ls
-cd Model/
-ls
-emacs -nw Group.php 
-ls -la
-emacs -nw Group.php 
 exit
 cd ..
 ls
@@ -126,3 +102,27 @@ ls
 cd messages
 ls
 mv view.php view.php.org
+perl sample.pl 
+perl sample.pl
+perl sample.pl
+perl sample.pl
+perl sample2.pl
+perl sample4.pl
+perl template.pl
+perl sample5.pl
+perl sample5.pl
+perl sample.pl
+perl sample5.pl
+perl sample5.pl
+perl sample5.pl
+perl bot.pl
+perl bot.pl
+perl bot_food.pl
+perl bot_food.pl
+perl bot_food.pl
+ruby main.rb
+ruby main.rb
+ruby main.rb
+ruby main.rb
+ruby main.rb
+ruby main.rb
