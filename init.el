@@ -23,6 +23,8 @@
 (setq require-final-newline t)
 ;;; バッファの最後でnewlineで新規行を追加するのを禁止する
 (setq next-line-add-newlines nil)
+;;;スクロールを1行ずつにする
+(setq scroll-step 1)
 
 ;;;package.elの設定
 (require 'package)
@@ -174,6 +176,13 @@
 (unless (server-running-p)
     (server-start))
 
+(defun my/kill-emacs-hook ()
+    (let ((progress (read-string "進捗どうですか? " "ダメです")))
+          (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
+                  (error "作業してください"))))
+(add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
+(defalias 'exit 'save-buffers-kill-emacs)
+
 (add-hook 'php-mode-hook
           (lambda ()
             (require 'php-completion)
@@ -230,3 +239,14 @@
 (define-key helm-map (kbd "C-j")        'helm-select-3rd-action)
 (require 'undo-tree)
 (global-undo-tree-mode)
+
+
+;;;ローカルのみで動く、コードの修正
+(global-auto-revert-mode 1)
+
+(defun php-cs-fix ()
+  (interactive)
+  (setq filename (buffer-file-name (current-buffer)))
+  (call-process "php-cs-fixer" nil nil nil "fix" filename )
+  (revert-buffer t t)
+  )
