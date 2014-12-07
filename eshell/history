@@ -1,128 +1,128 @@
-exit
+python3 sample.py 
+python3 sample.py | open
+rbenv exec bundle init
+ls
+rbenv exec bundle install
+rails -v
+rails new first_app
+ls
+cd first_app/
+ls
+rails s
+s
+ls
+git init
+ls -la
+git add -A
+git commit -m 'initial commit '
+ls
+bundle install --without production
+rbenv exec bundle install --without production
+ls
+rm Gemfile.lock
+ls
+rbenv exec bundle install --without production
+heroku create
+heroku login
+heroku create
+git remote add heroku https://protected-wave-6924.herokuapp.com/ | https://git.heroku.com/protected-wave-6924.git
+git remote add heroku https://git.heroku.com/protected-wave-6924.git
+git commit -m "change gemfile"
+git add Gemfile.lock
+git add Gemfile
+git commit -m "change gemfile"
+git push origin heroku
+git push heroku master
+remote:        https://protected-wave-6924.herokuapp.com/ deployed to Heroku        
+open https://protected-wave-6924.herokuapp.com/
+heroku open
+rails genarate scaffold User name:string email:string
+bundle exec rails genarate scaffold User name:string email:string
+rbenv exec rails generate scaffold User name:string email:string
+rbenv exec bundle exec rake db:migrate
+rails s
+rbenv exec bulde exec rails s
+rbenv exec bunlde exec rails s
+rbenv exec bundle exec rails s
+rbenv exec generate scaffold Micropost content:string user_id:integer
+rbenv exec rails generate scaffold Micropost content:string user_id:integer
+rails s
+rbenv exec bundle exec rails s
+rbenv exec bundle exec rake db:migrate
+rbenv exec bundle exec rails s
+rbenv exec bundle exec rails s
+rbenv exec bundle exec rails s
+rbenv exec bundle exec rails s
+rbenv exec rails console
+buldle exec rails s
+rbenv exec buldle exec rails s
+rbenv exec bundle exec rails s
+rbenv exec rails console
+git status
+git add .
+git commit -m 'scaffold user and microposts'
+git push heroku master
+git push heroku master
+heroku open
+heroku run rake db:migrate
+oopen https://protected-wave-6924.herokuapp.com/
 cd ..
 ls
-cd ..
+bundle exec rails new sample_app
+rbenv exec bundle exec rails new sample_app
+cd sample_app/
 ls
-cd ..
-ls
-cd ..
-ls
-php oil refine send_message
-php oil refine send_messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Message
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-php oil refine Send_Messages
-Welcome to the Emacs shell
-Welcome to the Emacs shell
-php oil refine Send_Messages
-i
-php oil refine Send_Messages
-exit
-ls
-mv _form.php _form.php.org
-mv create.php create.php.org
-ls
-exit
-ls
-cd ..
-ls
-mv template.php.org template.php.org2
-ls
-mv template.php template.php.org
-l
-touch template.php
-ls
-cd ..
-cd ..
-ls
-cd ..
-ls
-ls
-cd fuel/
-ls
-cd app/
-ls
-cd views/
-ls
-cd user
-cd ..
-lcd
-ls
-cd users
-ls
-mv index.php index.php.org
-ls
-ls
-ls
-ls
-cd ..
-ls
-cd ..
-ls
-cat index.php 
-ls
-mv index.php  views/users/
-ls
-cd views/
-ls
-cd users/
-ls
-ks
-ls
-cd ..
-ls
-cd users
-ls
-cd ..
-ls
-cd messages
-ls
-mv view.php view.php.org
-perl sample.pl 
-perl sample.pl
-perl sample.pl
-perl sample.pl
-perl sample2.pl
-perl sample4.pl
-perl template.pl
-perl sample5.pl
-perl sample5.pl
-perl sample.pl
-perl sample5.pl
-perl sample5.pl
-perl sample5.pl
-perl bot.pl
-perl bot.pl
-perl bot_food.pl
-perl bot_food.pl
-perl bot_food.pl
-ruby main.rb
-ruby main.rb
-ruby main.rb
-ruby main.rb
-ruby main.rb
-ruby main.rb
+bundle exec install --without production
+rbenc exec bundle exec install --without production
+rbenv exec bundle exec install --without production
+rbenv exec bundle install --without production
+rbenv exec bundle install --without production
+rbenv exec bundle update
+rbenv exec bundle install --without production
+rbenv exec bundle install --without production
+bundle exec rails generate rspec:install
+rbenv bundle exec rails generate rspec:install
+rbenv exec bundle exec rails generate rspec:install
+git init
+git add A
+git add -A
+git commit -m "initial commit "
+heroku create
+git push heroku master
+heroku run db:migrate
+heroku run rake db:migrate
+heroku open
+rails generate controller StaticPages home help --no-test-framework
+bundle exec rails generate controller StaticPages home help --no-test-framework
+rbenv exec bundle exec rails generate controller StaticPages home help --no-test-framework
+git add -A
+git commit -m "add static page"
+rbenv exec bundle exec rails generate integration_test static_pages
+rbenc exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rails s
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+rbenv exec bundle exec rspec spec/requests/static_pages_spec.rb
+git add -A
+git commit -m "change pages title"
+git push heroku master
+heroku open
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 
+perl sample.pl 

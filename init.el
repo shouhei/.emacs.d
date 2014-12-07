@@ -141,6 +141,16 @@
 (smartparens-global-mode t)
 
 
+;;ruby-mode
+(add-to-list 'load-path "(path-to)/Enhanced-Ruby-Mode") ; must be added after any path containing old ruby-mode
+(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
+;; optional
+
+(setq enh-ruby-program "/Users/shouhei/.rbenv/shims/ruby") ;
+
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 (setq ruby-electric-expand-delimiters-list nil)
@@ -250,3 +260,38 @@
   (call-process "php-cs-fixer" nil nil nil "fix" filename )
   (revert-buffer t t)
   )
+
+;; python-mode をロードする
+(when (autoload 'python-mode "python-mode" "Python editing mode." t)
+
+;; python-mode のときのみ python-pep8 のキーバインドを有効にする
+(setq python-mode-hook
+  (function (lambda ()
+    (local-set-key "\C-c\ p" 'python-pep8))))
+
+(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
+  (setq interpreter-mode-alist (cons '("python" . python-mode)
+                                                  interpreter-mode-alist)))
+
+(require 'lcomp)
+(lcomp-mode 1)
+
+(require 'helm-config)
+(require 'helm-gtags)
+
+(add-hook 'web-mode-hook (lambda () (helm-gtags-mode)))
+(add-hook 'python-mode-hook (lambda () (helm-gtags-mode)))
+(add-hook 'ruby-mode-hook (lambda () (helm-gtags-mode)))
+(add-hook 'php-mode-hook (lambda () (helm-gtags-mode)))
+
+;; customize
+(setq helm-c-gtags-path-style 'relative)
+(setq helm-c-gtags-ignore-case t)
+
+;; key bindings
+(add-hook 'helm-gtags-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "M-t") 'helm-gtags-find-tag)
+             (local-set-key (kbd "M-r") 'helm-gtags-find-rtag)
+             (local-set-key (kbd "M-s") 'helm-gtags-find-symbol)
+                               (local-set-key (kbd "C-t") 'helm-gtags-pop-stack)))
