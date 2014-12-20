@@ -1,2 +1,0 @@
-
-((digest . "ea519df148489c25f246fd0b1de3bed7") (undo-list nil ("/" . -1) nil ("/" . -2) nil ("/" . -3) nil ("/" . -4) nil ("/" . -5) nil (1 . 6) nil undo-tree-canary))
