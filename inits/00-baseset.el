@@ -19,8 +19,6 @@
 ;;;typoのチェック
 (setq-default flyspell-mode t)
 (setq ispell-dictionary "american")
-;;; 最終行に必ず一行挿入する
-(setq require-final-newline t)
 ;;; バッファの最後でnewlineで新規行を追加するのを禁止する
 (setq next-line-add-newlines nil)
 ;;;スクロールを1行ずつにする
@@ -37,10 +35,6 @@
 
 ;;ログの記録行数を増やす
 (setq message-log-max 10000)
-
-;;; 最後に改行無い時は挿入
-(setq require-final-newline t)
-(setq mode-require-final-newline t)
 
 (require 'server)
 (unless (server-running-p)
