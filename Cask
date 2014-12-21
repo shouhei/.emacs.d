@@ -19,7 +19,7 @@
 (depends-on "flycheck")
 (depends-on "flycheck-pos-tip")
 (depends-on "fringe-helper")
-(depends-on "git-gutter-fringe+")
+(depends-on "git-gutter-fringe")
 (depends-on "powerline")
 (depends-on "popwin")
 (depends-on "smartparens")

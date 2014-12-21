@@ -1,2 +1,1 @@
-(require 'fringe-helper)
-(global-git-gutter-mode)
+'(require 'fringe-helper)
