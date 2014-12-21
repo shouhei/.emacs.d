@@ -57,3 +57,5 @@
 (keyboard-translate ?\C-h ?\C-?)
 
 (global-auto-revert-mode 1)
+
+(global-linum-mode t)
