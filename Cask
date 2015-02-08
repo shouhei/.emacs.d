@@ -25,3 +25,7 @@
 (depends-on "undohist" :git "https://github.com/m2ym/undohist-el.git")
 (depends-on "volatile-highlights")
 (depends-on "smooth-scroll")
+(depends-on "ruby-mode")
+(depends-on "ruby-block")
+(depends-on "ruby-electric")
+(depends-on "rinari")
