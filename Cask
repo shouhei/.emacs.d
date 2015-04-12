@@ -35,3 +35,6 @@
         :git "https://github.com/suzuki/php-completion.git"
         :branch "develop"
         :files ("*.el" "phpcmp-index-of-*"))
+(depends-on "emacs-groovy-mode"
+        :git "https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git"
+        :branch "master")
