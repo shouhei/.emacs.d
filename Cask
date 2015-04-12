@@ -38,3 +38,4 @@
 (depends-on "emacs-groovy-mode"
         :git "https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git"
         :branch "master")
+(depends-on "haskell-mode")
