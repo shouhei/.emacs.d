@@ -1,5 +1,5 @@
 ;;emacsの基本設定
-
+(set-default-coding-system 'utf-8)
 ;;;バックアップファイルを作成しない
 (setq backup-inhibited t)
 ;;;スタートのメッセージを表示しない
@@ -52,4 +52,4 @@
 
 (global-auto-revert-mode 1)
 
-(global-linum-mode t)
+#(global-linum-mode t)

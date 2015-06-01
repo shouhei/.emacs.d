@@ -19,7 +19,6 @@
 (depends-on "flycheck-pos-tip")
 (depends-on "fringe-helper")
 (depends-on "git-gutter+")
-(depends-on "powerline")
 (depends-on "popwin")
 (depends-on "smartparens")
 (depends-on "undohist" :git "https://github.com/m2ym/undohist-el.git")
@@ -39,3 +38,4 @@
         :git "https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git"
         :branch "master")
 (depends-on "haskell-mode")
+(depends-on "go-mode")
