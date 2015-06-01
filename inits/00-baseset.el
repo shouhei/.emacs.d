@@ -1,5 +1,5 @@
 ;;emacsの基本設定
-(set-default-coding-system 'utf-8)
+
 ;;;バックアップファイルを作成しない
 (setq backup-inhibited t)
 ;;;スタートのメッセージを表示しない
@@ -8,8 +8,12 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 ;;;カッコの対をハイライト
 (show-paren-mode t)
+(setq show-paren-style 'mixed)
 ;;;カーソルの行をハイライト
 (global-hl-line-mode t)
+(custom-set-faces
+ '(hl-line ((t (:background "color-233"))))
+ )
 ;;;指定行への移動
 (global-set-key "\C-x\C-g" 'goto-line)
 ;;;タブをスペース4つに置き換える
@@ -52,4 +56,4 @@
 
 (global-auto-revert-mode 1)
 
-#(global-linum-mode t)
+(global-linum-mode t)
