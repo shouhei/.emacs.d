@@ -45,3 +45,12 @@
           (file-name) ":" line ":" column ": " (or "E" "F") ": " (message)
           line-end))
     :modes (enh-ruby-mode ruby-mode))
+
+(eval-after-load "ruby-mode"
+  '(progn
+     (require 'smartparens-ruby)
+     (set-face-attribute 'sp-show-pair-match-face nil
+                         :background "grey20" :foreground "green"
+                         :weight 'semi-bold)))
+
+(add-hook 'ruby-mode-hook 'show-smartparens-mode)
