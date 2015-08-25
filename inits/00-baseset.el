@@ -1,5 +1,16 @@
 ;;emacsの基本設定
 
+(set-language-environment 'Japanese)
+(set-terminal-coding-system 'utf-8)
+(setq file-name-coding-system 'utf-8)
+(set-clipboard-coding-system 'utf-8)
+(setq default-buffer-file-coding-system 'utf-8)
+(setq coding-system-for-read 'mule-utf-8-unix)
+(prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-buffer-file-coding-system 'utf-8-unix)
+
 ;;;バックアップファイルを作成しない
 (setq backup-inhibited t)
 ;;;スタートのメッセージを表示しない
@@ -44,12 +55,6 @@
 (unless (server-running-p)
     (server-start))
 
-(defun my/kill-emacs-hook ()
-    (let ((progress (read-string "進捗どうですか? " "ダメです")))
-              (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
-                        (error "作業してください"))))
-
-(add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
 (defalias 'exit 'save-buffers-kill-emacs)
 
 (keyboard-translate ?\C-h ?\C-?)

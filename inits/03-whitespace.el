@@ -12,7 +12,7 @@ pace))
 
 (set-face-attribute 'whitespace-trailing nil
                     :foreground "DeepPink"
-		                        :underline t)
+                                        :underline t)
 (set-face-attribute 'whitespace-tab nil
                     :foreground "LightSkyBlue"
                                         :underline t)

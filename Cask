@@ -39,3 +39,8 @@
         :branch "master")
 (depends-on "haskell-mode")
 (depends-on "go-mode")
+(depends-on "dracula-theme"
+        :git "https://github.com/film42/dracula-theme.git"
+        :branch "gt/emacs_love"
+        :files("emacs/*.el")
+)
