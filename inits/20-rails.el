@@ -1,5 +1,5 @@
 (add-to-list 'auto-mode-alist '("\\.rb$latex " . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.erb$latex " . ruby-mode))
+;(add-to-list 'auto-mode-alist '("\\.erb$latex " . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
