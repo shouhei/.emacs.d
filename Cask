@@ -44,3 +44,4 @@
         :branch "gt/emacs_love"
         :files("emacs/*.el")
 )
+(depends-on "w3m")
