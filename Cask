@@ -27,6 +27,7 @@
 (depends-on "ruby-mode")
 (depends-on "ruby-block")
 (depends-on "ruby-electric")
+(depends-on "rubocop")
 (depends-on "rinari")
 (depends-on "jazzradio" :git "https://github.com/syohex/emacs-jazzradio.git")
 (depends-on "php-mode")
@@ -45,3 +46,4 @@
         :files("emacs/*.el")
 )
 (depends-on "w3m")
+(depends-on "motion-mode")

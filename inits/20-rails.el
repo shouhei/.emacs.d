@@ -1,5 +1,6 @@
 (add-to-list 'auto-mode-alist '("\\.rb$latex " . ruby-mode))
 ;(add-to-list 'auto-mode-alist '("\\.erb$latex " . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$". ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
@@ -21,7 +22,7 @@
 
 (flycheck-define-checker ruby-rubocop
   "A Ruby syntax and style checker using the RuboCop tool."
-  :command ("rubocop" "--format" "emacs" "--silent"
+  :command ("rubocop" "--format" "emacs"
             (config-file "--config" flycheck-rubocoprc)
             source)
   :error-patterns
