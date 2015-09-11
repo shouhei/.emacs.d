@@ -62,3 +62,8 @@
 (global-auto-revert-mode 1)
 
 (global-linum-mode t)
+(defun my/kill-emacs-hook ()
+  (let ((progress (read-string "進捗どうですか? " "ダメです")))
+      (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
+            (error "作業してください"))))
+(add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
