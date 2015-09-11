@@ -1,3 +1,4 @@
+(setq w3m-command "/usr/local/bin/w3m")
 (require 'w3m)
 (require 'markdown-mode)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
@@ -21,3 +22,4 @@
 )
 
 (define-key markdown-mode-map "\C-c\C-c" 'markdown-render-w3m)
+
