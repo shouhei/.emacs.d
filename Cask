@@ -47,3 +47,4 @@
 )
 (depends-on "w3m")
 (depends-on "motion-mode")
+(depends-on "sequential-command")
