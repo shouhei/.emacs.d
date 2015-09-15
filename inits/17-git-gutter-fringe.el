@@ -1,2 +1,2 @@
 (require 'git-gutter+)
-(global-git-gutter-mode)
+(global-git-gutter+-mode)
