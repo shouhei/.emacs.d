@@ -22,6 +22,7 @@
 (setq show-paren-style 'mixed)
 ;;;カーソルの行をハイライト
 (global-hl-line-mode t)
+
 (custom-set-faces
  '(hl-line ((t (:background "color-233"))))
  )
@@ -62,6 +63,8 @@
 (global-auto-revert-mode 1)
 
 (global-linum-mode t)
+(setq linum-format "%3d")
+
 (defun my/kill-emacs-hook ()
   (let ((progress (read-string "進捗どうですか? " "ダメです")))
       (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
