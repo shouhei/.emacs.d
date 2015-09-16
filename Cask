@@ -6,6 +6,7 @@
 
 (depends-on "init-loader")
 (depends-on "e2wm")
+(depends-on "hiwin")
 (depends-on "helm")
 (depends-on "popup")
 (depends-on "auto-complete")
