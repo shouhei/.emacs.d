@@ -65,8 +65,10 @@
 (global-linum-mode t)
 (setq linum-format "%3d")
 
+;; C-x C-c を打った際に確認を挟む
 (defun my/kill-emacs-hook ()
   (let ((progress (read-string "進捗どうですか? " "ダメです")))
       (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
             (error "作業してください"))))
 (add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
+
