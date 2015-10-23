@@ -51,3 +51,4 @@
 (depends-on "motion-mode")
 (depends-on "sequential-command")
 (depends-on "coffee-mode")
+(depends-on "which-key")
