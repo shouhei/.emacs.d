@@ -1,14 +1,10 @@
 ;;.zshrv 'export TERM=xterm-256color'
 
-(set-face-background 'region "SkyBlue")
-(set-face-foreground 'region "black")
-
 (when window-system
   ;; tool-barを非表示
   (tool-bar-mode 0)
   ;; scroll-barを非表示
   (scroll-bar-mode 0)
-  (load-theme 'dracula t)
   ;; Mac用フォント設定
   ;; http://tcnksm.sakura.ne.jp/blog/2012/04/02/emacs/
 
@@ -27,8 +23,4 @@
         ;;        '((".*Hiragino_Mincho_pro.*" . 1.2)))
               '((".*Ricty Diminished.*" . 1.2)));; Mac用フォント設定
 )
-
-;; CocoaEmacs以外はメニューバーを非表示
-(unless (eq window-system 'ns)
-  (load-theme 'zenburn t)
-)
+(load-theme 'spacemacs-dark t)

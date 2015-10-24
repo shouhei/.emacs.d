@@ -11,7 +11,6 @@
 (depends-on "popup")
 (depends-on "auto-complete")
 (depends-on "undo-tree")
-(depends-on "zenburn-theme")
 (depends-on "anzu")
 (depends-on "web-mode")
 (depends-on "rainbow-delimiters")
@@ -42,13 +41,9 @@
         :branch "master")
 (depends-on "haskell-mode")
 (depends-on "go-mode")
-(depends-on "dracula-theme"
-        :git "https://github.com/film42/dracula-theme.git"
-        :branch "gt/emacs_love"
-        :files("emacs/*.el")
-)
 (depends-on "w3m")
 (depends-on "motion-mode")
 (depends-on "sequential-command")
 (depends-on "coffee-mode")
 (depends-on "which-key")
+(depends-on "spacemacs-theme")
