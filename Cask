@@ -16,7 +16,6 @@
 (depends-on "rainbow-delimiters")
 (depends-on "rainbow-mode")
 (depends-on "flycheck")
-(depends-on "flycheck-pos-tip")
 (depends-on "fringe-helper")
 (depends-on "git-gutter-fringe")
 (depends-on "popwin")
@@ -28,7 +27,6 @@
 (depends-on "ruby-block")
 (depends-on "ruby-electric")
 (depends-on "rubocop")
-(depends-on "rinari")
 (depends-on "jazzradio" :git "https://github.com/syohex/emacs-jazzradio.git")
 (depends-on "php-mode")
 (depends-on "php-completion"
