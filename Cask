@@ -44,3 +44,4 @@
 (depends-on "spacemacs-theme")
 (depends-on "enh-ruby-mode")
 (depends-on "robe")
+(depends-on "gist")
