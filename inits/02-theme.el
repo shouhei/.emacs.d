@@ -17,6 +17,8 @@
   (set-fontset-font
    nil 'japanese-jisx0208
    (font-spec :family "Ricty Diminished Discord")) ;; font
-
+  (load-theme 'django t)
 )
-(load-theme 'spacemacs-dark t)
+(unless (eq window-system 'ns)
+  (load-theme 'spacemacs-dark t)
+)
