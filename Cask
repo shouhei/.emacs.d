@@ -45,6 +45,7 @@
 (depends-on "robe")
 (depends-on "gist")
 (depends-on "magit")
+(depends-on "js2-mode")
 (depends-on "django-theme")
 (depends-on "spacemacs-theme")
 (depends-on "auto-save-buffers-enhanced")
