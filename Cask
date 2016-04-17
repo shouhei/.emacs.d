@@ -51,3 +51,6 @@
 (depends-on "auto-save-buffers-enhanced")
 (depends-on "open-junk-file")
 (depends-on "elscreen")
+(depends-on "go-mode")
+(depends-on "go-autocomplete")
+(depends-on "go-eldoc")
