@@ -13,6 +13,8 @@
 
 ;;;バックアップファイルを作成しない
 (setq backup-inhibited t)
+;;; 自動保存の無効
+(setq auto-save-default nil)
 ;;;スタートのメッセージを表示しない
 (setq inhibit-startup-message t)
 ;;;yes -> y
@@ -71,4 +73,3 @@
       (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
             (error "作業してください"))))
 (add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
-

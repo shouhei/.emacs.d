@@ -46,3 +46,4 @@
 (depends-on "robe")
 (depends-on "gist")
 (depends-on "magit")
+(depends-on "auto-save-buffers-enhanced")
