@@ -49,3 +49,5 @@
 (depends-on "django-theme")
 (depends-on "spacemacs-theme")
 (depends-on "auto-save-buffers-enhanced")
+(depends-on "open-junk-file")
+(depends-on "elscreen")

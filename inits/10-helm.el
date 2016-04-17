@@ -9,7 +9,8 @@
 (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
 
 (define-key global-map (kbd "M-x")     'helm-M-x)
-(define-key global-map (kbd "C-x C-f") 'helm-find-files)
+(define-key global-map (kbd "C-x C-f") 'elscreen-find-file)
+(define-key global-map (kbd "C-c C-f") 'helm-find-files)
 (define-key global-map (kbd "C-x C-r") 'helm-recentf)
 (define-key global-map (kbd "M-y")     'helm-show-kill-ring)
 (define-key global-map (kbd "C-c i")   'helm-imenu)
