@@ -21,4 +21,7 @@ export TERM=xterm-256color
 
 ```
 npm install eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint -g
+npm install -g jscs
 ```
+
+defaultrc.dの中から、.eslintrcと.jscsrcをコピーして利用する
