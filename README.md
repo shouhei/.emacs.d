@@ -17,3 +17,8 @@ export PATH="/home/yamaguchi/.cask/bin:$PATH"
 export TERM=xterm-256color
 ```
 
+### js2-mode
+
+```
+npm install eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint -g
+```
