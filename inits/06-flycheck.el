@@ -6,3 +6,7 @@
       '(lambda (errors)
                (-when-let (messages (-keep #'flycheck-error-message errors))
                           (popup-tip (s-join "\n\n" messages)))))
+(eval-after-load 'flycheck
+  '(custom-set-variables
+    '(flycheck-disabled-checkers '(javascript-jshint javascript-jscs))
+    ))
