@@ -1,1 +1,1 @@
-(require 'gist)
+(autoload 'gist "gist" nil t)

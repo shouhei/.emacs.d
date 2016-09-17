@@ -1,5 +1,5 @@
 ;;;タブ,空白の設定
-(require 'whitespace)
+(autoload 'whitespace "whitespace" nil t)
 
 (setq whitespace-style '(face tabs tab-mark spaces space-mark lines-tail trailing space-before-tab space-after-tab::s\
 pace))

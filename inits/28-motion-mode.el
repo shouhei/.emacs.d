@@ -1,4 +1,4 @@
-(require 'motion-mode)
+(autoload 'motion-mode nil t)
 ;; following add-hook is very important.
 (add-hook 'ruby-mode-hook 'motion-recognize-project)
 (add-to-list 'ac-modes 'motion-mode)

@@ -1,4 +1,4 @@
-(require 'open-junk-file)
+(autoload 'open-junk-file "open-junk-file" nil t)
 (defun open-junk-file ()
   (interactive)
   (let* ((file (expand-file-name

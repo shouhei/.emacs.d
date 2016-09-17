@@ -1,9 +1,7 @@
 (setenv "GOROOT" "/usr/local/opt/go/libexec")
-(setenv "GOPATH" (concat (getenv "HOME") "/WorkSpace/sample/go"))
+(setenv "GOPATH" (concat (getenv "HOME") "/WorkSpace/sample/golib"))
 
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-
+(autoload 'go-autocomplete "go-autocomplete" nil t)
 (add-hook 'go-mode-hook (lambda ()
                           (setq gofmt-command "goimports")
                           (add-hook 'before-save-hook 'gofmt-before-save)
