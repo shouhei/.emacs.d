@@ -8,6 +8,7 @@
 (depends-on "e2wm")
 (depends-on "hiwin")
 (depends-on "helm")
+(depends-on "helm-match-plugin")
 (depends-on "popup")
 (depends-on "auto-complete")
 (depends-on "undo-tree")
@@ -29,10 +30,11 @@
 (depends-on "rubocop")
 (depends-on "jazzradio" :git "https://github.com/syohex/emacs-jazzradio.git")
 (depends-on "php-mode")
-(depends-on "php-completion"
-        :git "https://github.com/suzuki/php-completion.git"
-        :branch "develop"
-        :files ("*.el" "phpcmp-index-of-*"))
+(depends-on "ac-php")
+;;(depends-on "php-completion"
+;;        :git "https://github.com/suzuki/php-completion.git"
+;;        :branch "develop"
+;;        :files ("*.el" "phpcmp-index-of-*"))
 (depends-on "emacs-groovy-mode"
         :git "https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git"
         :branch "master")

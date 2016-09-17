@@ -2,11 +2,11 @@
 (setq auto-mode-alist
       (cons '("\\.php\\'" . php-mode) auto-mode-alist))
 (add-hook 'php-mode-hook
-          (lambda ()
-            (require 'php-completion)
-            (php-completion-mode t)
-            (define-key php-mode-map (kbd "C-o") 'phpcmp-complete)
-            (when (require 'auto-complete nil t)
-              (make-variable-buffer-local 'ac-sources)
-              (add-to-list 'ac-sources 'ac-source-php-completion)
-                           (auto-complete-mode t))))
+            '(lambda ()
+               (auto-complete-mode t)
+               (require 'ac-php)
+               (setq ac-sources  '(ac-source-php ) )
+               (yas-global-mode 1)
+               (define-key php-mode-map  (kbd "C-]") 'ac-php-find-symbol-at-point)   ;goto define
+               (define-key php-mode-map  (kbd "C-t") 'ac-php-location-stack-back   ) ;go back
+               ))
