@@ -10,19 +10,19 @@
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
-(require 'ruby-electric)
+(autoload 'ruby-electric nil t)
 (add-hook 'enh-ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 (setq ruby-electric-expand-delimiters-list nil)
 
 ;; ruby-block.el --- highlight matching block
-(require 'ruby-block)
+(autoload 'ruby-block nil t)
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
 
 ;;(require 'rubocop)
 ;;(add-hook 'ruby-mode-hook 'rubocop-mode)
 
-(require 'flycheck)
+(autoload 'flycheck "flycheck" nil t)
 (setq flycheck-check-syntax-automatically '(mode-enabled save))
 (add-hook 'enh-ruby-mode-hook 'flycheck-mode)
 
@@ -34,7 +34,7 @@
                          :weight 'semi-bold)))
 
 (add-hook 'enh-ruby-mode-hook 'show-smartparens-mode)
-(require 'rspec-mode)
+(autoload 'rspec-mode "rspec-mode" nil t)
 (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
 (autoload 'ac-robe-setup "ac-robe" "auto-complete robe" nil nil)
 (add-hook 'robe-mode-hook 'ac-robe-setup)

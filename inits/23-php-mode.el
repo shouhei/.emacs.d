@@ -1,4 +1,4 @@
-(autoload 'php-mode "php-mode")
+(require 'php-mode)
 (setq auto-mode-alist
       (cons '("\\.php\\'" . php-mode) auto-mode-alist))
 (add-hook 'php-mode-hook

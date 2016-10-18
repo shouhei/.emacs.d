@@ -8,7 +8,6 @@
 (depends-on "e2wm")
 (depends-on "hiwin")
 (depends-on "helm")
-(depends-on "helm-match-plugin")
 (depends-on "popup")
 (depends-on "auto-complete")
 (depends-on "undo-tree")
@@ -57,3 +56,5 @@
 (depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "jscs")
+(depends-on "google-translate")
+(depends-on "dockerfile-mode")
