@@ -55,3 +55,4 @@
 (depends-on "jscs")
 (depends-on "google-translate")
 (depends-on "dockerfile-mode")
+(depends-on "persistent-scratch")
