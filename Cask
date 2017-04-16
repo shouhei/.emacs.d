@@ -24,15 +24,14 @@
 (depends-on "volatile-highlights")
 (depends-on "smooth-scroll")
 (depends-on "ruby-mode")
-(depends-on "ruby-block")
-(depends-on "ruby-electric")
 (depends-on "rubocop")
 (depends-on "jazzradio" :git "https://github.com/syohex/emacs-jazzradio.git")
 (depends-on "php-mode")
-(depends-on "php-completion"
-        :git "https://github.com/suzuki/php-completion.git"
-        :branch "develop"
-        :files ("*.el" "phpcmp-index-of-*"))
+(depends-on "ac-php")
+;;(depends-on "php-completion"
+;;        :git "https://github.com/suzuki/php-completion.git"
+;;        :branch "develop"
+;;        :files ("*.el" "phpcmp-index-of-*"))
 (depends-on "emacs-groovy-mode"
         :git "https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes.git"
         :branch "master")
@@ -41,7 +40,6 @@
 (depends-on "sequential-command")
 (depends-on "coffee-mode")
 (depends-on "which-key")
-(depends-on "enh-ruby-mode")
 (depends-on "robe")
 (depends-on "gist")
 (depends-on "magit")
@@ -61,3 +59,7 @@
 (depends-on "dockerfile-mode")
 (depends-on "hcl-mode")
 (depends-on "terraform-mode")
+(depends-on "google-translate")
+(depends-on "persistent-scratch")
+(depends-on "typescript-mode")
+(depends-on "tss")

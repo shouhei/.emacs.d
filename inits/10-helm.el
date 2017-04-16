@@ -1,4 +1,4 @@
-(require 'helm-config)
+(autoload 'helm-config "helm-config" nil t)
 (helm-mode 1)
 (define-key helm-map (kbd "C-h") 'delete-backward-char)
 (define-key helm-find-files-map (kbd "C-h") 'delete-backward-char)

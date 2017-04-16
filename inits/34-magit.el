@@ -1,1 +1,1 @@
-(require 'magit)
+(autoload 'magit "magit" nil t)

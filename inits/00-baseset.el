@@ -73,3 +73,4 @@
       (when (string-match-p "\\(?:ダメ\\|だめ\\|駄目\\)" progress)
             (error "作業してください"))))
 (add-hook 'kill-emacs-hook 'my/kill-emacs-hook)
+(require 'cl)

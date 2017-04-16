@@ -1,5 +1,5 @@
 ;;e2wm
-(require 'e2wm)
+(autoload 'e2wm "e2wm" nil t)
 (global-set-key (kbd "M-+") 'e2wm:start-management)
 
 (e2wm:add-keymap
