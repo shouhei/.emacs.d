@@ -59,7 +59,6 @@
 (depends-on "dockerfile-mode")
 (depends-on "hcl-mode")
 (depends-on "terraform-mode")
-(depends-on "google-translate")
 (depends-on "persistent-scratch")
 (depends-on "typescript-mode")
 (depends-on "tss")
