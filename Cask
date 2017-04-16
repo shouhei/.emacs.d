@@ -56,3 +56,5 @@
 (depends-on "google-translate")
 (depends-on "dockerfile-mode")
 (depends-on "persistent-scratch")
+(depends-on "typescript-mode")
+(depends-on "tss")
