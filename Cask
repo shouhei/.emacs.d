@@ -1,6 +1,5 @@
 (source gnu)
 (source melpa)
-(source marmalade)
 (source SC)
 (source org)
 
@@ -20,7 +19,7 @@
 (depends-on "git-gutter-fringe")
 (depends-on "popwin")
 (depends-on "smartparens")
-(depends-on "undohist" :git "https://github.com/m2ym/undohist-el.git")
+(depends-on "undohist")
 (depends-on "volatile-highlights")
 (depends-on "smooth-scroll")
 (depends-on "ruby-mode")
@@ -62,3 +61,7 @@
 (depends-on "persistent-scratch")
 (depends-on "typescript-mode")
 (depends-on "tss")
+(depends-on "intero")
+(depends-on "visual-regexp")
+(depends-on "python-mode")
+(depends-on "markdown-mode")

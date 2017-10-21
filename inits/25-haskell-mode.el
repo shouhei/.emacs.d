@@ -7,3 +7,4 @@
 (add-hook 'haskell-mode-hook 'font-lock-mode)
 
 (add-hook 'haskell-mode-hook (lambda () (flymake-mode)))
+(add-hook 'haskell-mode-hook 'intero-mode)
